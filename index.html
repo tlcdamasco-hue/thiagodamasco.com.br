@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://thiagodamasco.com.br/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Thiago Damasco · Palestrante de liderança comercial">
+<meta property="og:description" content="Resultado que o líder não sabe explicar, o time não sabe repetir. Palestra Média não é diagnóstico para convenções de vendas, kickoffs e encontros de líderes.">
+<meta property="og:image" content="https://thiagodamasco.com.br/img/palco.jpg">
+<meta property="og:url" content="https://thiagodamasco.com.br/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F1726'/%3E%3Crect x='6' y='9' width='5' height='17' fill='%23E4572E'/%3E%3Crect x='14' y='17' width='5' height='9' fill='%239AA6B8'/%3E%3Crect x='22' y='19' width='5' height='7' fill='%239AA6B8'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} [hidden]{display:none!important}</style>
+<title>Thiago Damasco · Palestrante de liderança comercial</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Thiago Damasco é executivo comercial, palestrante e professor. Palestra sobre liderança comercial: Média não é diagnóstico. Para convenções de vendas, kickoffs e encontros de líderes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: editorial single column with a wide "painel" band — the page reads like a sales review: thesis, the chart that disproves the average, then the talk, the ideas, the proof. */
+:root{
+  --paper:#F5F7FA;      /* cool paper */
+  --paper-2:#E9EDF3;    /* panel */
+  --ink:#0F1726;        /* deep ink */
+  --ink-2:#465063;      /* secondary text */
+  --rule:#CDD4DF;
+  --signal:#E4572E;     /* the two bars nobody explains */
+  --signal-ink:#B8401C;
+  --steel:#9AA6B8;      /* the rest of the team */
+  --navy:#16233A;       /* stage band */
+  --on-navy:#EEF2F8;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-data:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --s-1:.875rem; --s0:1.0625rem; --s1:1.3rem; --s2:1.75rem; --s3:2.5rem; --s4:clamp(2.6rem,6.2vw,4.9rem);
+  --max:1160px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0C121D; --paper-2:#131C2B; --ink:#E9EEF6; --ink-2:#A3AEC0; --rule:#26324A;
+  --signal:#FF7A52; --signal-ink:#FF9C7C; --steel:#55637C; --navy:#060A12; --on-navy:#E9EEF6; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#0C121D; --paper-2:#131C2B; --ink:#E9EEF6; --ink-2:#A3AEC0; --rule:#26324A;
+  --signal:#FF7A52; --signal-ink:#FF9C7C; --steel:#55637C; --navy:#060A12; --on-navy:#E9EEF6; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-stretch:78%;line-height:1.02;letter-spacing:-.01em;text-wrap:balance;margin:0}
+p{margin:0}
+.eyebrow{font-family:var(--f-data);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.measure{max-width:62ch}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:1.15rem;text-decoration:none;letter-spacing:.01em}
+nav.links{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem}
+nav.links a{text-decoration:none;color:var(--ink-2)}
+nav.links a:hover{color:var(--ink)}
+nav.links .cta{color:var(--ink);font-weight:600;border-bottom:2px solid var(--signal)}
+@media (max-width:760px){nav.links a:not(.cta){display:none}}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(40px,7vw,88px) clamp(32px,5vw,56px)}
+.hero h1{font-size:var(--s4);font-weight:850}
+.hero h1 em{font-style:normal;color:var(--signal-ink)}
+.hero .lede{margin-top:22px;font-size:var(--s1);line-height:1.45;color:var(--ink-2);max-width:34ch}
+.hero .lede strong{color:var(--ink);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;font-weight:600;font-size:.98rem;text-decoration:none;border:1.5px solid var(--ink);border-radius:2px;transition:background .15s,color .15s}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--signal-ink);border-color:var(--signal-ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.hero figure{margin:0;min-width:0}
+.hero figure img{width:100%;aspect-ratio:4/3.2;object-fit:cover;object-position:58% 30%;filter:saturate(.92)}
+.hero figcaption{font-family:var(--f-data);font-size:.75rem;color:var(--ink-2);margin-top:8px}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;align-items:start}.hero figure{order:-1}}
+
+/* painel: the average vs the distribution */
+.painel{background:var(--paper-2);border-block:1px solid var(--rule)}
+.painel .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,64px);padding-block:clamp(40px,6vw,72px);align-items:center}
+.painel h2{font-size:var(--s3);font-weight:800}
+.painel p{margin-top:16px;color:var(--ink-2)}
+.painel .chart{min-width:0;overflow-x:auto}
+.painel svg{width:100%;min-width:520px;height:auto;display:block}
+.painel svg text{font-family:var(--f-data);fill:var(--ink-2);font-size:11px}
+.painel svg .v{fill:var(--ink);font-weight:600}
+.painel svg .bar{fill:var(--steel)}
+.painel svg .bar.hot{fill:var(--signal)}
+.painel svg .avg{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:5 4}
+.painel svg .base{stroke:var(--rule)}
+.painel svg .avg-label{fill:var(--ink);font-weight:600;font-size:12px}
+.painel .note{font-family:var(--f-data);font-size:.75rem;color:var(--ink-2);margin-top:10px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.facts div{border-top:2px solid var(--ink);padding-top:10px}
+.facts b{display:block;font-family:var(--f-display);font-stretch:78%;font-size:2.2rem;line-height:1;font-variant-numeric:tabular-nums}
+.facts b.hot{color:var(--signal-ink)}
+.facts span{font-size:.9rem;color:var(--ink-2)}
+@media (max-width:860px){.painel .wrap{grid-template-columns:1fr}}
+
+/* sections */
+section.block{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-bottom:40px;align-items:baseline}
+.sec-head h2{font-size:var(--s3);font-weight:800}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:8px}}
+
+/* palestra */
+.talk{display:grid;grid-template-columns:220px 1fr;gap:24px}
+.talk-body{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,56px)}
+.talk-body p+p{margin-top:14px}
+.talk-title{font-family:var(--f-display);font-stretch:78%;font-weight:850;font-size:var(--s2);line-height:1.05;margin-bottom:16px}
+.spec{display:grid;gap:0;border-top:1px solid var(--rule)}
+.spec div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:.95rem}
+.spec dt{font-family:var(--f-data);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);padding-top:3px}
+.spec dd{margin:0}
+.questions{margin-top:32px;background:var(--navy);color:var(--on-navy);padding:28px;border-radius:2px}
+.questions .eyebrow{color:color-mix(in srgb,var(--on-navy) 70%,transparent)}
+.questions ol{margin:14px 0 0;padding-left:1.3em;display:grid;gap:10px;font-size:1.05rem}
+.questions li::marker{font-family:var(--f-data);color:var(--signal)}
+.questions p{margin-top:16px;font-size:.92rem;color:color-mix(in srgb,var(--on-navy) 78%,transparent)}
+@media (max-width:900px){.talk,.talk-body{grid-template-columns:1fr}}
+
+/* ideias */
+.ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:0;border-top:2px solid var(--ink)}
+.idea{padding:26px 24px 28px 0;border-bottom:1px solid var(--rule)}
+.idea:nth-child(odd){padding-right:32px}
+.idea h3{font-size:1.65rem;font-weight:800}
+.idea .def{margin-top:10px}
+.idea .scene{margin-top:10px;font-size:.92rem;color:var(--ink-2);border-left:2px solid var(--signal);padding-left:12px}
+
+/* videos */
+.video-feature{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+.vcard{display:block;text-decoration:none;min-width:0}
+.vcard .thumb{position:relative;overflow:hidden;background:var(--paper-2)}
+.vcard img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .4s ease}
+.vcard:hover img{transform:scale(1.025)}
+.vcard .dur{position:absolute;right:10px;bottom:10px;background:rgba(10,14,22,.82);color:#fff;font-family:var(--f-data);font-size:.75rem;padding:3px 7px}
+.vcard .play{position:absolute;left:14px;bottom:14px;width:46px;height:46px;border-radius:50%;background:var(--signal);display:grid;place-items:center}
+.vcard .play::before{content:"";border-left:14px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.vcard h3{font-family:var(--f-body);font-weight:600;font-size:1.02rem;line-height:1.35;margin-top:12px;letter-spacing:0}
+.vcard p{font-size:.9rem;color:var(--ink-2);margin-top:4px}
+.side-videos{display:grid;gap:24px}
+.shorts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:40px}
+.shorts .vcard img{aspect-ratio:9/16}
+.shorts .vcard h3{font-size:.9rem}
+@media (max-width:900px){.video-feature{grid-template-columns:1fr}.shorts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* sobre */
+.about{display:grid;grid-template-columns:340px 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+.about img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;filter:grayscale(.15)}
+.about .bio p+p{margin-top:14px}
+.about .sig{margin-top:24px;font-family:var(--f-display);font-stretch:78%;font-weight:800;font-size:var(--s2);line-height:1.08;max-width:22ch}
+.timeline{margin:28px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.timeline li{font-size:.85rem;padding:5px 10px;border:1px solid var(--rule)}
+.timeline b{font-family:var(--f-data);font-size:.75rem;font-weight:600;color:var(--signal-ink);margin-right:6px;font-variant-numeric:tabular-nums}
+@media (max-width:820px){.about{grid-template-columns:1fr}.about img{max-width:340px}}
+
+/* faq */
+.faq{border-top:2px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--rule);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-data);color:var(--signal-ink);font-size:1.2rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:10px;color:var(--ink-2);max-width:70ch}
+
+/* contato */
+.contact{background:var(--navy);color:var(--on-navy)}
+.contact .wrap{padding-block:clamp(56px,8vw,96px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:end}
+.contact h2{font-size:var(--s4);font-weight:850}
+.contact p{margin-top:16px;color:color-mix(in srgb,var(--on-navy) 80%,transparent);max-width:44ch}
+.contact .btn.primary{background:var(--signal);border-color:var(--signal);color:#160B06}
+.contact .btn.primary:hover{background:var(--on-navy);border-color:var(--on-navy)}
+.channels{display:grid;gap:0;border-top:1px solid color-mix(in srgb,var(--on-navy) 25%,transparent)}
+.channels div{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--on-navy) 25%,transparent);flex-wrap:wrap}
+.channels dt{font-family:var(--f-data);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:color-mix(in srgb,var(--on-navy) 65%,transparent)}
+.channels dd{margin:0;font-weight:600;user-select:all}
+.copy{font:inherit;font-size:.8rem;background:none;border:1px solid color-mix(in srgb,var(--on-navy) 40%,transparent);color:var(--on-navy);padding:4px 9px;cursor:pointer;border-radius:2px;margin-left:8px}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+
+footer.foot{padding-block:28px;font-size:.85rem;color:var(--ink-2)}
+footer.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer.foot nav{display:flex;gap:18px;flex-wrap:wrap}
+
+@media (prefers-reduced-motion:no-preference){
+  .bar{transform-box:fill-box;transform-origin:bottom;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .bar:nth-of-type(2){animation-delay:.05s}.bar:nth-of-type(3){animation-delay:.1s}.bar:nth-of-type(4){animation-delay:.15s}
+  .bar:nth-of-type(5){animation-delay:.2s}.bar:nth-of-type(6){animation-delay:.25s}.bar:nth-of-type(7){animation-delay:.3s}
+  .bar:nth-of-type(8){animation-delay:.35s}.bar:nth-of-type(9){animation-delay:.4s}.bar:nth-of-type(10){animation-delay:.45s}
+  @keyframes rise{from{transform:scaleY(.15)}to{transform:scaleY(1)}}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Thiago Damasco</a>
+    <nav class="links" aria-label="Seções">
+      <a href="#palestra">Palestra</a>
+      <a href="#ideias">Ideias</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#perguntas">Perguntas</a>
+      <a class="cta" href="#contratar">Contratar palestra</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Palestrante de liderança comercial</p>
+        <h1 style="margin-top:14px">Resultado que o líder não sabe explicar, <em>o time não sabe repetir.</em></h1>
+        <p class="lede"><strong>Thiago Damasco</strong> é executivo comercial, palestrante e professor. Tem meta todo mês e fala para líderes de vendas sobre o que fazer com o número antes de comemorar ou cobrar.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contratar">Contratar a palestra</a>
+          <a class="btn ghost" href="https://youtu.be/6vLkxkZrJVM" target="_blank" rel="noopener">Assistir à palestra completa</a>
+        </div>
+      </div>
+      <figure>
+        <img src="img/palco.jpg" alt="Thiago Damasco palestrando com microfone no palco do evento PSA The Best Weekend" width="1600" height="1067">
+        <figcaption>PSA The Best Weekend, São Paulo, 2026</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="painel" aria-labelledby="painel-t">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">A ideia central</p>
+        <h2 id="painel-t" style="margin-top:12px">Média não é diagnóstico.</h2>
+        <p>O time fechou o mês com 100% da meta. A reunião de segunda vira comemoração. Mas a média esconde quem fez o número e por quê, e é isso que decide se o resultado se repete.</p>
+        <div class="facts">
+          <div><b>100%</b><span>média do time no mês</span></div>
+          <div><b class="hot">39%</b><span>do resultado veio de 2 vendedores</span></div>
+          <div><b>6 de 10</b><span>vendedores ficaram abaixo de 90%</span></div>
+          <div><b>?</b><span>o que explica esse número</span></div>
+        </div>
+      </div>
+      <div class="chart">
+        <svg viewBox="0 0 640 280" role="img" aria-labelledby="chart-t chart-d">
+          <title id="chart-t">Resultado individual de 10 vendedores em relação à meta</title>
+          <desc id="chart-d">Exemplo: a média do time é 100% da meta, mas dois vendedores fizeram 210% e 180%, e seis ficaram entre 55% e 85%.</desc>
+          <line class="base" x1="30" y1="240" x2="630" y2="240"/>
+          <rect class="bar hot" x="44"  y="49.1"  width="40" height="190.9"/>
+          <rect class="bar hot" x="102" y="76.4"  width="40" height="163.6"/>
+          <rect class="bar" x="160" y="153.6" width="40" height="86.4"/>
+          <rect class="bar" x="218" y="158.2" width="40" height="81.8"/>
+          <rect class="bar" x="276" y="162.7" width="40" height="77.3"/>
+          <rect class="bar" x="334" y="167.3" width="40" height="72.7"/>
+          <rect class="bar" x="392" y="171.8" width="40" height="68.2"/>
+          <rect class="bar" x="450" y="176.4" width="40" height="63.6"/>
+          <rect class="bar" x="508" y="185.5" width="40" height="54.5"/>
+          <rect class="bar" x="566" y="190"   width="40" height="50"/>
+          <line class="avg" x1="30" y1="149.1" x2="630" y2="149.1"/>
+          <text class="avg-label" x="630" y="141" text-anchor="end">média do time: 100%</text>
+          <g text-anchor="middle">
+            <text class="v" x="64"  y="42">210%</text><text class="v" x="122" y="69">180%</text>
+            <text class="v" x="180" y="146">95%</text><text class="v" x="238" y="151">90%</text>
+            <text class="v" x="296" y="155">85%</text><text class="v" x="354" y="160">80%</text>
+            <text class="v" x="412" y="164">75%</text><text class="v" x="470" y="169">70%</text>
+            <text class="v" x="528" y="178">60%</text><text class="v" x="586" y="183">55%</text>
+            <text x="64" y="258">V1</text><text x="122" y="258">V2</text><text x="180" y="258">V3</text><text x="238" y="258">V4</text><text x="296" y="258">V5</text>
+            <text x="354" y="258">V6</text><text x="412" y="258">V7</text><text x="470" y="258">V8</text><text x="528" y="258">V9</text><text x="586" y="258">V10</text>
+          </g>
+        </svg>
+        <p class="note">Exemplo ilustrativo · resultado de cada vendedor em % da meta individual</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="palestra" aria-labelledby="palestra-t">
+    <div class="wrap">
+      <div class="talk">
+        <div><p class="eyebrow">A palestra</p></div>
+        <div>
+          <h2 id="palestra-t" class="talk-title">Média não é diagnóstico: o que o líder faz com o número antes de comemorar ou cobrar</h2>
+          <div class="talk-body">
+            <div class="measure">
+              <p>Toda empresa conhece a sexta do dia 30: são 17h30, falta 15% para a meta, o grupo do WhatsApp se enche de foguetes e, às sete da noite, a meta é batida. Todo mundo comemora. Ninguém sabe dizer o que deu certo.</p>
+              <p>Nesta palestra, Thiago Damasco mostra por que esse é o resultado mais perigoso do mês, e como o líder comercial passa a investigar o número antes de reagir a ele. A história começa num verão em que ele vendia sanduíche natural na praia, aos 17 anos, e às vezes voltava para casa com o isopor cheio sem entender por quê.</p>
+              <p>O time sai com três perguntas para a reunião de segunda-feira e com uma pergunta que muda a conversa: <strong>o que explica esse número?</strong></p>
+            </div>
+            <dl class="spec">
+              <div><dt>Para quem</dt><dd>Líderes comerciais, gerentes e times de vendas com meta mensal</dd></div>
+              <div><dt>Ocasiões</dt><dd>Convenções de vendas, kickoffs de ano, encontros de lideranças</dd></div>
+              <div><dt>Formato</dt><dd>Presencial ou online, com duração ajustada ao evento</dd></div>
+              <div><dt>O time leva</dt><dd>As 3 perguntas antes de comemorar, a rotina de leitura do número e a linguagem comum para a reunião de pipeline</dd></div>
+            </dl>
+          </div>
+          <div class="questions">
+            <p class="eyebrow">As três perguntas antes de comemorar (ou cobrar)</p>
+            <ol>
+              <li>Quem fez esse número: o time inteiro ou dois vendedores?</li>
+              <li>O que mudou desde o mês passado?</li>
+              <li>Isso se repete sem uma sexta do dia 30?</li>
+            </ol>
+            <p>Se ninguém sabe responder, ainda é cedo para comemorar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ideias" aria-labelledby="ideias-t" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Ideias</p><h2 id="ideias-t">Cinco conceitos para ler o resultado comercial</h2></div>
+      <div class="ideas">
+        <article class="idea" id="media-nao-e-diagnostico">
+          <h3>Média não é diagnóstico</h3>
+          <p class="def">A média do time diz quanto foi vendido, não como. Para entender o resultado, o líder olha a distribuição: quem fez o número, em que canal e com que esforço.</p>
+          <p class="scene">O time bateu 100% da meta. Dois vendedores fizeram 39% do resultado.</p>
+        </article>
+        <article class="idea" id="sexta-do-dia-30">
+          <h3>A sexta do dia 30</h3>
+          <p class="def">A cultura de bater a meta no último dia, no grito. Funciona uma vez e treina o time a deixar tudo para o fim do mês.</p>
+          <p class="scene">17h30, falta 15%, foguetinho no grupo. Às 19h, meta batida e nenhuma explicação.</p>
+        </article>
+        <article class="idea" id="v0">
+          <h3>O V0</h3>
+          <p class="def">O comportamento de fábrica do time, que volta assim que a pressão passa. O discurso motivacional muda a semana; só a rotina muda o V0.</p>
+          <p class="scene">Toca o sino na segunda. Na quinta-feira, voltou tudo como era.</p>
+        </article>
+        <article class="idea" id="lider-filtro">
+          <h3>Líder filtro × líder amplificador</h3>
+          <p class="def">O líder amplificador repassa ao time toda a pressão que recebe. O líder filtro traduz a cobrança em prioridade e protege o time do ruído.</p>
+          <p class="scene">A diretoria cobra às 9h. O que chega ao time às 9h05?</p>
+        </article>
+        <article class="idea" id="lider-de-rotina">
+          <h3>Líder de resultado × líder de rotina</h3>
+          <p class="def">O líder de resultado olha só o número final. O líder de rotina acompanha o que produz o número: propostas, retornos e origem dos negócios.</p>
+          <p class="scene">Quantas propostas o seu time manda amanhã? E de onde vem o retorno?</p>
+        </article>
+        <article class="idea" id="refem">
+          <h3>Você não tem um vendedor, tem um refém</h3>
+          <p class="def">Quando o resultado depende do talento de uma pessoa e não de um processo que o time domina, a empresa fica refém dela.</p>
+          <p class="scene">O melhor vendedor sai da empresa e leva o resultado junto.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="videos" aria-labelledby="videos-t" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Vídeos</p><h2 id="videos-t">Assista antes de contratar</h2></div>
+      <div class="video-feature">
+        <a class="vcard" href="https://youtu.be/6vLkxkZrJVM" target="_blank" rel="noopener">
+          <div class="thumb"><img src="img/v-palestra.jpg" alt="Thiago Damasco no palco da PSA durante a palestra Média não é diagnóstico" loading="lazy" width="960" height="540"><span class="play" aria-hidden="true"></span><span class="dur">10:16</span></div>
+          <h3>Palestra completa: a meta batida que ninguém sabe explicar</h3>
+          <p>Palco da PSA, São Paulo. Com capítulos no YouTube.</p>
+        </a>
+        <div class="side-videos">
+          <a class="vcard" href="https://youtu.be/dWr3W-xRoV4" target="_blank" rel="noopener">
+            <div class="thumb"><img src="img/v-manifesto.jpg" alt="Thiago Damasco gravando o manifesto" loading="lazy" width="960" height="540"><span class="play" aria-hidden="true"></span><span class="dur">1:52</span></div>
+            <h3>Manifesto</h3>
+            <p>Por que desconfiar de meta batida que ninguém sabe explicar.</p>
+          </a>
+          <a class="vcard" href="https://youtu.be/oVesB83zgsc" target="_blank" rel="noopener">
+            <div class="thumb"><img src="img/v-palestra.jpg" alt="" loading="lazy" width="960" height="540"><span class="play" aria-hidden="true"></span><span class="dur">0:57</span></div>
+            <h3>Meta batida às 19h. E ninguém sabe por quê</h3>
+            <p>Trecho da palestra.</p>
+          </a>
+        </div>
+      </div>
+      <div class="shorts">
+        <a class="vcard" href="https://youtube.com/shorts/TpUiybDecE0" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-meta.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">0:57</span></div><h3>Meta batida às 19h</h3></a>
+        <a class="vcard" href="https://youtube.com/shorts/O3Zf3Go84yc" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-isopor.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">1:24</span></div><h3>O dia em que voltei com o isopor cheio</h3></a>
+        <a class="vcard" href="https://youtube.com/shorts/gwBLtNR1Fyo" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-refem.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">0:55</span></div><h3>Você não tem um vendedor. Tem um refém</h3></a>
+        <a class="vcard" href="https://youtube.com/shorts/bWCAoWTlask" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-rotina.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">0:27</span></div><h3>Líder de resultado ou líder de rotina?</h3></a>
+        <a class="vcard" href="https://youtube.com/shorts/nz7je_XeVRk" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-dia29.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">0:48</span></div><h3>A meta veio no dia 29. Você sabe por quê?</h3></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="sobre" aria-labelledby="sobre-t" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Sobre</p><h2 id="sobre-t">Thiago Damasco</h2></div>
+      <div class="about">
+        <img src="img/retrato.jpg" alt="Retrato de Thiago Damasco" loading="lazy" width="900" height="1020">
+        <div class="bio measure">
+          <p>Thiago Damasco é executivo comercial, palestrante e professor. É gerente comercial da Raiz Educação, onde lidera times comerciais com meta todo mês, e professor e mentor comercial do Ibmec Hubs RJ, no programa de aceleração de startups.</p>
+          <p>Começou em vendas e trade marketing na Ambev. Passou sete anos na Petrobras, no planejamento e no acompanhamento de desempenho de projetos, e foi gerente de logística do Maracanã nos Jogos Rio 2016. Depois veio o comercial: sourcing na Lojas Leader, venda consultiva e gestão comercial na MetLife, a própria corretora de seguros, a gerência comercial da MAG Seguros e a construção da área comercial do grupo Sinergia Educação.</p>
+          <p>Filho de vendedor e de professora, juntou as duas heranças num jeito próprio de liderar: do pai, aprendeu que meta se bate todo dia; da mãe, que ninguém acerta a prova estudando na véspera. Desde 2022 dá aulas, mentorias, treinamentos e palestras sobre o momento que quase ninguém olha: o que o líder faz com o número antes de comemorar ou cobrar.</p>
+          <p class="sig">“Eu desconfio de meta batida que ninguém sabe explicar.”</p>
+          <ol class="timeline" aria-label="Trajetória">
+            <li><b>2006</b> Ambev</li><li><b>2008</b> Petrobras</li><li><b>2015</b> Jogos Rio 2016</li><li><b>2017</b> Lojas Leader</li><li><b>2018</b> MetLife</li><li><b>2020</b> MAG Seguros</li><li><b>2021</b> Sinergia Educação</li><li><b>2022</b> Aulas e palestras</li><li><b>2025</b> Raiz Educação</li><li><b>2025</b> Ibmec Hubs RJ</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="perguntas" aria-labelledby="perguntas-t" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Perguntas frequentes</p><h2 id="perguntas-t">Antes de fechar a agenda</h2></div>
+      <div class="faq">
+        <details open><summary>Quem é Thiago Damasco?</summary><p>Thiago Damasco é executivo comercial, palestrante e professor brasileiro, que fala sobre liderança comercial. É autor da ideia “média não é diagnóstico”: resultado que o líder não sabe explicar, o time não sabe repetir.</p></details>
+        <details><summary>Sobre o que é a palestra “Média não é diagnóstico”?</summary><p>É uma palestra para líderes e times comerciais sobre o que fazer com o número antes de comemorar ou cobrar. Mostra por que a meta batida no último dia é um aviso, apresenta três perguntas para a reunião de segunda-feira e a diferença entre o líder de resultado e o líder de rotina.</p></details>
+        <details><summary>Para que tipo de evento a palestra serve?</summary><p>Convenções de vendas, kickoffs do ano comercial, encontros de gerentes e lideranças, e eventos de associações comerciais e cooperativas com times que trabalham com meta mensal.</p></details>
+        <details><summary>O que fazer quando o time bate a meta e ninguém sabe explicar por quê?</summary><p>Antes de comemorar, faça três perguntas: quem fez esse número (o time inteiro ou dois vendedores), o que mudou desde o mês passado e se o resultado se repete sem uma “sexta do dia 30”. Se ninguém souber responder, ainda é cedo para comemorar.</p></details>
+        <details><summary>A palestra pode ser online?</summary><p>Sim. A palestra é feita presencialmente ou online, com duração ajustada à agenda do evento. Thiago Damasco mora no Rio de Janeiro e atende eventos em todo o Brasil.</p></details>
+        <details><summary>Como contratar?</summary><p>A contratação é feita pela PSA (Profissionais S.A.), que cuida da proposta, da agenda e do contrato. Para conversar sobre o evento antes, use o e-mail ou o telefone desta página.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contratar" aria-labelledby="contratar-t">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow" style="color:color-mix(in srgb,var(--on-navy) 65%,transparent)">Contratação</p>
+        <h2 id="contratar-t" style="margin-top:12px">Seu time para de depender da sexta do dia 30.</h2>
+        <p>Conte o evento, a data e o tamanho do time. A proposta sai pela PSA, com agenda e contrato.</p>
+        <div class="actions"><a class="btn primary" href="https://palestrantes.profissionaissa.com.br/palestrante/thiago-damasco-h1htd8" target="_blank" rel="noopener">Pedir proposta pela PSA</a></div>
+      </div>
+      <dl class="channels">
+        <div><dt>E-mail</dt><dd><span id="c-mail">tlcdamasco@gmail.com</span><button class="copy" type="button" data-copy="c-mail">Copiar</button></dd></div>
+        <div><dt>Telefone e WhatsApp</dt><dd><span id="c-tel">(21) 99283-6736</span><button class="copy" type="button" data-copy="c-tel">Copiar</button></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/thiagodamascooficial" target="_blank" rel="noopener">/in/thiagodamascooficial</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Thiago Damasco · Palestrante de liderança comercial</p>
+    <nav aria-label="Redes">
+      <a href="https://www.linkedin.com/in/thiagodamascooficial" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/tlcdamasco/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCfwaB2P85tinvChkpKszNEw" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://palestrantes.profissionaissa.com.br/palestrante/thiago-damasco-h1htd8" target="_blank" rel="noopener">PSA</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":"https://thiagodamasco.com.br/#thiago","name":"Thiago Damasco","alternateName":"Thiago Luiz Cardoso Damasco",
+  "jobTitle":"Executivo comercial, palestrante e professor",
+  "description":"Palestrante de liderança comercial. Autor da ideia 'média não é diagnóstico': resultado que o líder não sabe explicar, o time não sabe repetir.",
+  "knowsAbout":["Liderança comercial","Gestão de vendas","Gestão de metas","Convenção de vendas","Sales enablement","Experiência do cliente","Média não é diagnóstico"],
+  "worksFor":{"@type":"Organization","name":"Raiz Educação"},
+  "affiliation":[{"@type":"Organization","name":"Ibmec Hubs RJ"},{"@type":"Organization","name":"PSA Profissionais S.A."}],
+  "alumniOf":[{"@type":"Organization","name":"Ambev"},{"@type":"Organization","name":"Petrobras"},{"@type":"Organization","name":"Comitê Organizador dos Jogos Rio 2016"},{"@type":"Organization","name":"MetLife"},{"@type":"Organization","name":"MAG Seguros"},{"@type":"Organization","name":"Sinergia Educação"}],
+  "image":"https://thiagodamasco.com.br/img/retrato.jpg","url":"https://thiagodamasco.com.br/","email":"mailto:tlcdamasco@gmail.com",
+  "sameAs":["https://www.linkedin.com/in/thiagodamascooficial","https://www.instagram.com/tlcdamasco/","https://www.youtube.com/channel/UCfwaB2P85tinvChkpKszNEw","https://palestrantes.profissionaissa.com.br/palestrante/thiago-damasco-h1htd8"]},
+ {"@type":"VideoObject","name":"Palestra sobre liderança comercial: meta batida que ninguém sabe explicar | Thiago Damasco","description":"Palestra completa de Thiago Damasco no palco da PSA sobre o líder comercial que explica o número antes de comemorar ou cobrar.","thumbnailUrl":"https://i.ytimg.com/vi/6vLkxkZrJVM/hqdefault.jpg","uploadDate":"2026-11-21","duration":"PT10M16S","contentUrl":"https://youtu.be/6vLkxkZrJVM","embedUrl":"https://www.youtube.com/embed/6vLkxkZrJVM","creator":{"@id":"https://thiagodamasco.com.br/#thiago"}},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Quem é Thiago Damasco?","acceptedAnswer":{"@type":"Answer","text":"Thiago Damasco é executivo comercial, palestrante e professor brasileiro, que fala sobre liderança comercial. É autor da ideia 'média não é diagnóstico': resultado que o líder não sabe explicar, o time não sabe repetir."}},
+  {"@type":"Question","name":"Sobre o que é a palestra 'Média não é diagnóstico'?","acceptedAnswer":{"@type":"Answer","text":"Uma palestra para líderes e times comerciais sobre o que fazer com o número antes de comemorar ou cobrar: por que a meta batida no último dia é um aviso, três perguntas para a reunião de segunda-feira e a diferença entre o líder de resultado e o líder de rotina."}},
+  {"@type":"Question","name":"O que fazer quando o time bate a meta e ninguém sabe explicar por quê?","acceptedAnswer":{"@type":"Answer","text":"Antes de comemorar, pergunte quem fez esse número, o que mudou desde o mês passado e se o resultado se repete sem uma 'sexta do dia 30'. Se ninguém souber responder, ainda é cedo para comemorar."}},
+  {"@type":"Question","name":"Como contratar a palestra de Thiago Damasco?","acceptedAnswer":{"@type":"Answer","text":"A contratação é feita pela PSA (Profissionais S.A.), que cuida da proposta, da agenda e do contrato."}}]}
+]}
+</script>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy);var t=el.textContent;
+    var done=function(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1600)};
+    var sel=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selecionado'};
+    try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+  });
+});
+</script>
+
+</body>
+</html>

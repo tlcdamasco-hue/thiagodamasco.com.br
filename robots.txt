@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thiagodamasco.com.br/sitemap.xml
