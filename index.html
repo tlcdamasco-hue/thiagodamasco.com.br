@@ -137,6 +137,12 @@ section.block{padding-block:clamp(56px,8vw,104px)}
 
 /* videos */
 .video-feature{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+.depo{display:grid;grid-template-columns:minmax(200px,280px) 1fr;gap:clamp(24px,5vw,56px);align-items:center;border-top:1px solid var(--rule);padding-top:32px}
+.depo video{width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--paper-2);display:block}
+.depo blockquote{margin:0;font-family:var(--f-display);font-stretch:85%;font-size:var(--s2);line-height:1.15;border-left:3px solid var(--signal);padding-left:20px}
+.depo figcaption{margin-top:18px;padding-left:23px;font-size:.95rem;color:var(--ink-2)}
+.depo figcaption b{display:block;color:var(--ink);font-weight:600}
+@media (max-width:700px){.depo{grid-template-columns:1fr}.depo video{max-width:280px}}
 .vcard{display:block;text-decoration:none;min-width:0}
 .vcard .thumb{position:relative;overflow:hidden;background:var(--paper-2)}
 .vcard img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .4s ease}
@@ -380,6 +386,19 @@ footer.foot nav{display:flex;gap:18px;flex-wrap:wrap}
         <a class="vcard" href="https://youtube.com/shorts/bWCAoWTlask" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-rotina.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">0:27</span></div><h3>Líder de resultado ou líder de rotina?</h3></a>
         <a class="vcard" href="https://youtube.com/shorts/nz7je_XeVRk" target="_blank" rel="noopener"><div class="thumb"><img src="img/c-dia29.jpg" alt="" loading="lazy" width="360" height="640"><span class="dur">0:48</span></div><h3>A meta veio no dia 29. Você sabe por quê?</h3></a>
       </div>
+    </div>
+  </section>
+
+  <section class="block" id="depoimentos" aria-labelledby="depoimentos-t" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Depoimentos</p><h2 id="depoimentos-t">Quem já trabalhou comigo</h2></div>
+      <figure class="depo">
+        <video controls preload="none" playsinline poster="img/d-eduardo.jpg" width="478" height="850"><source src="img/d-eduardo.mp4" type="video/mp4"></video>
+        <div>
+          <blockquote>“Para empreender, não basta disposição. É preciso técnica. A mentoria com o Thiago me deu ferramentas e insights que aplico no dia a dia, com muito mais assertividade nas abordagens comerciais e mais retorno.”</blockquote>
+          <figcaption><b>Eduardo Miguez</b>Presidente do Comitê de Assessoramento, Portal ComexRio · Mentoria de desenvolvimento de negócios</figcaption>
+        </div>
+      </figure>
     </div>
   </section>
 
