@@ -143,6 +143,14 @@ section.block{padding-block:clamp(56px,8vw,104px)}
 .depo figcaption{margin-top:18px;padding-left:23px;font-size:.95rem;color:var(--ink-2)}
 .depo figcaption b{display:block;color:var(--ink);font-weight:600}
 @media (max-width:700px){.depo{grid-template-columns:1fr}.depo video{max-width:280px}}
+.depo + .depo{margin-top:32px}
+.depo.txt{grid-template-columns:minmax(200px,280px) 1fr}
+.depo .who{align-self:start}
+.depo .who b{display:block;font-family:var(--f-display);font-stretch:78%;font-size:var(--s3);line-height:1;color:var(--signal-ink)}
+.depo .who span{display:block;margin-top:10px;font-size:.95rem;color:var(--ink-2)}
+.depo .long{font-family:var(--f-body);font-stretch:100%;font-size:var(--s0);line-height:1.6}
+.depo .long p+p{margin-top:12px}
+@media (max-width:700px){.depo.txt{grid-template-columns:1fr}}
 .vcard{display:block;text-decoration:none;min-width:0}
 .vcard .thumb{position:relative;overflow:hidden;background:var(--paper-2)}
 .vcard img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .4s ease}
@@ -397,6 +405,13 @@ footer.foot nav{display:flex;gap:18px;flex-wrap:wrap}
         <div>
           <blockquote>“Para empreender, não basta disposição. É preciso técnica. A mentoria com o Thiago me deu ferramentas e insights que aplico no dia a dia, com muito mais assertividade nas abordagens comerciais e mais retorno.”</blockquote>
           <figcaption><b>Eduardo Miguez</b>Presidente do Comitê de Assessoramento, Portal ComexRio · Mentoria de desenvolvimento de negócios</figcaption>
+        </div>
+      </figure>
+      <figure class="depo txt">
+        <div class="who"><b>GEduc e Fórum de Captação</b><span>Painel no principal congresso de líderes educacionais do Brasil e palestra para gestores de marketing e comercial de instituições de ensino.</span></div>
+        <div>
+          <blockquote class="long"><p>“Tivemos o Thiago Damasco conosco em duas oportunidades, em eventos de diferentes portes: no GEduc, principal congresso de líderes educacionais do Brasil, e também em nosso Fórum de Captação e Permanência de Alunos, focado em gestores das áreas de marketing e comercial de instituições de ensino.</p><p>Nas duas ocasiões, ele foi excelente! Com uma didática muito clara, conteúdo consistente, dados relevantes e temas instigantes, o Thiago consegue envolver o público, despertar reflexões e manter a atenção do começo ao fim.</p><p>Recomendo muito a palestra do Thiago para você, sua instituição ou empresa!”</p></blockquote>
+          <figcaption><b>Thalita Chrispim</b>Sócia e Gerente de Operações e Relacionamentos, HUMUS Consultoria Educacional (realizadora do GEduc)</figcaption>
         </div>
       </figure>
     </div>
